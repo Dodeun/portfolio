@@ -1,19 +1,19 @@
-import { HtmlIcon } from "../components/icons/techIcons/HtmlIcon";
-import { CssIcon } from "../components/icons/techIcons/CssIcon";
-import { JavaScriptIcon } from "../components/icons/techIcons/JavaScriptIcon";
-import { ReactIcon } from "../components/icons/techIcons/ReactIcon";
-import { TypeScriptIcon } from "../components/icons/techIcons/TypeScriptIcon";
-import { TailwindIcon } from "../components/icons/techIcons/TailwindIcon";
-import { NodeIcon } from "../components/icons/techIcons/NodeIcon";
-import { ExpressIcon } from "../components/icons/techIcons/ExpressIcon";
-import { NestJSIcon } from "../components/icons/techIcons/NestJSIcon";
-import { MySQLIcon } from "../components/icons/techIcons/MySQLIcon";
-import { JestIcon } from "../components/icons/techIcons/JestIcon";
-import { CypressIcon } from "../components/icons/techIcons/CypressIcon";
-import { GitIcon } from "../components/icons/techIcons/GitIcon";
-import { GithubIcon } from "../components/icons/techIcons/GithubIcon";
-import { DockerIcon } from "../components/icons/techIcons/DockerIcon";
-import { VSCodeIcon } from "../components/icons/techIcons/VSCodeIcon";
+import HtmlIcon from "../components/icons/tech-icons/HtmlIcon";
+import CssIcon from "../components/icons/tech-icons/CssIcon";
+import JavaScriptIcon from "../components/icons/tech-icons/JavaScriptIcon";
+import ReactIcon from "../components/icons/tech-icons/ReactIcon";
+import TypeScriptIcon from "../components/icons/tech-icons/TypeScriptIcon";
+import TailwindIcon from "../components/icons/tech-icons/TailwindIcon";
+import NodeIcon from "../components/icons/tech-icons/NodeIcon";
+import ExpressIcon from "../components/icons/tech-icons/ExpressIcon";
+import NestJSIcon from "../components/icons/tech-icons/NestJSIcon";
+import MySQLIcon from "../components/icons/tech-icons/MySQLIcon";
+import JestIcon from "../components/icons/tech-icons/JestIcon";
+import CypressIcon from "../components/icons/tech-icons/CypressIcon";
+import GitIcon from "../components/icons/tech-icons/GitIcon";
+import GithubIcon from "../components/icons/tech-icons/GithubIcon";
+import DockerIcon from "../components/icons/tech-icons/DockerIcon";
+import VSCodeIcon from "../components/icons/tech-icons/VSCodeIcon";
 
 export const skills = [
   {

@@ -1,7 +1,7 @@
 // Simple card containing the skill  icon and its name
 
 function SkillCard() {
-    return <></>;
+  return <></>;
 }
 
 export default SkillCard;
