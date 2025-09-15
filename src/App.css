@@ -1,4 +1,30 @@
 @import "tailwindcss";
 @theme {
-  --color-test-500: oklch(0.72 0.11 178);
+  /* FONTS */
+  --font-heading: "Nunito", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+
+  /* COLORS */
+  --color-bg-primary-1000: #121212;
+  --color-bg-primary-900: #1e1e1e;
+  --color-bg-primary-800: #2a2a2a;
+
+  --color-text-primary-0: #eaeaea;
+  --color-text-primary-100: #b0b0b0;
+  --color-text-primary-200: #808080;
+
+  --color-accent-500: #f6ae2d;
+  --color-accent-600: #d99000;
+  --color-accent-400: #ffd369;
+
+  --color-shadow: #000000;
+
+  /* SHADOWS */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.6);
+
+  --shadow-inner-sm: inset 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-inner-md: inset 0 4px 6px rgba(0, 0, 0, 0.5);
+  --shadow-inner-lg: inset 0 10px 15px rgba(0, 0, 0, 0.6);
 }
