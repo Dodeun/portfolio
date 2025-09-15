@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 @import "tailwindcss";
+
 @theme {
   /* FONTS */
   --font-heading: "Nunito", sans-serif;
@@ -25,6 +28,15 @@
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.6);
 
   --shadow-inner-sm: inset 0 1px 3px rgba(0, 0, 0, 0.4);
-  --shadow-inner-md: inset 0 4px 6px rgba(0, 0, 0, 0.5);
+  --shadow-inner-md: inset 0 4px 6px rgba(0, 0, 0, 0.4);
   --shadow-inner-lg: inset 0 10px 15px rgba(0, 0, 0, 0.6);
+
+  /* BREAKPOINTS */
+  --breakpoint-verylarge: 1600px;
+  --breakpoint-medium: 724px;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-accent-500);
+  outline-offset: 2px;
 }
