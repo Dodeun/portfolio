@@ -28,9 +28,9 @@ function About() {
           <span className="text-accent-400">motivated</span>, I am eager to apply my knowledge in a professional
           environment, learn from experienced developers, and actively contribute to real-world projects.
         </p>
-        <Button variant="primary" onClick={() => console.log("Link to CV / Download")}>
-          Checkout CV
-        </Button>
+        <a href="/portfolio/CV-Jordan-Burdon.pdf" download>
+          <Button variant="primary">Download CV</Button>
+        </a>
       </div>
       <div className="verylarge:block absolute right-1 bottom-1 hidden">
         <img className="w-[25vw] max-w-[450px] min-w-[250px]" src={frontDesktopIllustration} alt="Illustration" />

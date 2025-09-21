@@ -6,6 +6,7 @@ import LinkedInIcon from "../icons/base-icons/LinkedIn";
 import GithubIcon from "../icons/tech-icons/GithubIcon";
 import Button from "../ui/Button";
 import Input from "../ui/Input";
+import Avatar from "../../assets/illustrations/Avatar.svg";
 
 function Sidebar() {
   const [name, setName] = useState("");
@@ -42,7 +43,9 @@ function Sidebar() {
     <div className="text-text-primary-0 flex h-full flex-col items-center justify-between pt-2">
       <div className="flex w-full flex-col items-center gap-4">
         <div className="flex flex-col items-center gap-2">
-          <div className="bg-bg-primary-1000 shadow-inner-md h-18 w-18 rounded-md"></div>
+          <div className="bg-bg-primary-1000 shadow-inner-md relative h-20 w-20 rounded-md p-2">
+            <img src={Avatar} alt="Avatar" className="absolute bottom-0 left-0 h-20 w-20" />
+          </div>
           <p>Jordan BURDON</p>
           <p className="text-text-primary-100">burdon.jordan@gmail.com</p>
         </div>
