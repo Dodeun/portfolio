@@ -20,7 +20,7 @@ function Button({ variant, onClick, children, isActive, type, className }: Butto
       break;
     case "secondary":
       classes =
-        "bg-bg-primary-1000 text-accent-500 hover:text-accent-600 p-1.5 shadow-inner-sm hover:cursor-pointer rounded-sm";
+        "bg-bg-primary-1000 text-accent-500 hover:text-accent-600 p-1.5 shadow-inner-sm hover:cursor-pointer rounded- hover:bg-bg-primary-800 rounded-sm";
       break;
     case "nav":
       if (isActive) {

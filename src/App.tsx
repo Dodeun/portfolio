@@ -15,12 +15,12 @@ function App() {
   return (
     <>
       <div className="bg-bg-primary-1000 medium:p-4 flex h-screen gap-4 p-2">
-        <Section className="medium:flex hidden max-w-[412px] flex-2 overflow-y-auto">
+        <Section className="medium:flex hidden max-w-[412px] flex-2">
           <Sidebar />
         </Section>
         <div className="medium:gap-4 flex flex-5 flex-col items-center justify-center gap-2">
           <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
-          <Section className="overflow-y-auto">
+          <Section>
             {activeTab === "about" && <About />}
             {activeTab === "skills" && <Skills />}
             {activeTab === "projects" && <Projects />}

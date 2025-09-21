@@ -19,7 +19,7 @@ export const skills = [
   {
     name: "HTML",
     Icon: HtmlIcon,
-    color: "#E34F26",
+    color: "text-[#E34F26]",
     order: {
       frontend: 1,
     },
@@ -27,7 +27,7 @@ export const skills = [
   {
     name: "CSS",
     Icon: CssIcon,
-    color: "#1572B6",
+    color: "text-[#1572B6]",
     order: {
       frontend: 2,
     },
@@ -35,7 +35,7 @@ export const skills = [
   {
     name: "JavaScript",
     Icon: JavaScriptIcon,
-    color: "#F7DF1E",
+    color: "text-[#F7DF1E]",
     order: {
       frontend: 3,
     },
@@ -43,7 +43,7 @@ export const skills = [
   {
     name: "React",
     Icon: ReactIcon,
-    color: "#61DAFB",
+    color: "text-[#61DAFB]",
     order: {
       frontend: 4,
     },
@@ -51,7 +51,7 @@ export const skills = [
   {
     name: "TypeScript",
     Icon: TypeScriptIcon,
-    color: "#3178C6",
+    color: "text-[#3178C6]",
     order: {
       frontend: 5,
       backend: 4,
@@ -60,7 +60,7 @@ export const skills = [
   {
     name: "Tailwind",
     Icon: TailwindIcon,
-    color: "#06B6D4",
+    color: "text-[#06B6D4]",
     order: {
       frontend: 6,
     },
@@ -68,7 +68,7 @@ export const skills = [
   {
     name: "Node.js",
     Icon: NodeIcon,
-    color: "#339933",
+    color: "text-[#339933]",
     order: {
       backend: 1,
     },
@@ -76,7 +76,7 @@ export const skills = [
   {
     name: "Express",
     Icon: ExpressIcon,
-    color: "PLACEHOLDER",
+    color: "text-[#FFFFFF]",
     order: {
       backend: 2,
     },
@@ -84,7 +84,7 @@ export const skills = [
   {
     name: "NestJS",
     Icon: NestJSIcon,
-    color: "PLACEHOLDER",
+    color: "text-[#E0234E]",
     order: {
       backend: 3,
     },
@@ -92,7 +92,7 @@ export const skills = [
   {
     name: "MySQL",
     Icon: MySQLIcon,
-    color: "#4479A1",
+    color: "text-[#4479A1]",
     order: {
       database: 1,
     },
@@ -100,7 +100,7 @@ export const skills = [
   {
     name: "Jest",
     Icon: JestIcon,
-    color: "PLACEHOLDER",
+    color: "text-[#C21325]",
     order: {
       tests: 1,
     },
@@ -108,7 +108,7 @@ export const skills = [
   {
     name: "Cypress",
     Icon: CypressIcon,
-    color: "PLACEHOLDER",
+    color: "text-[#69D3A7]",
     order: {
       tests: 2,
     },
@@ -116,7 +116,7 @@ export const skills = [
   {
     name: "Git",
     Icon: GitIcon,
-    color: "#F05032",
+    color: "text-[#F05032]",
     order: {
       tools: 1,
     },
@@ -124,7 +124,7 @@ export const skills = [
   {
     name: "Github",
     Icon: GithubIcon,
-    color: "#181717",
+    color: "text-[#181717]",
     order: {
       tools: 2,
     },
@@ -132,7 +132,7 @@ export const skills = [
   {
     name: "Docker",
     Icon: DockerIcon,
-    color: "#2496ED",
+    color: "text-[#2496ED]",
     order: {
       tools: 3,
     },
@@ -140,7 +140,7 @@ export const skills = [
   {
     name: "VSCode",
     Icon: VSCodeIcon,
-    color: "#007ACC",
+    color: "text-[#007ACC]",
     order: {
       tools: 4,
     },

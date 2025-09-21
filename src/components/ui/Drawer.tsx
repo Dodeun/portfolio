@@ -11,7 +11,7 @@ function Drawer({ children }: DrawerProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="medium:hidden">
+    <div className="medium:hidden scrollbar">
       <div className="fixed right-3.5 bottom-4 z-50">
         <Button variant="secondary" onClick={() => setIsOpen(!isOpen)}>
           <ArrowIcon className="w-8" />

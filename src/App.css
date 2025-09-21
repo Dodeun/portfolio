@@ -34,9 +34,38 @@
   /* BREAKPOINTS */
   --breakpoint-verylarge: 1600px;
   --breakpoint-medium: 724px;
+  --breakpoint-small: 376px;
 }
 
 *:focus-visible {
   outline: 2px solid var(--color-accent-500);
   outline-offset: 2px;
+}
+
+@supports selector(::-webkit-scrollbar) {
+  .scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+  .scrollbar::-webkit-scrollbar-track {
+    background: theme(--color-bg-primary-900);
+  }
+  .scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background: theme(--color-accent-500);
+  }
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  .scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: theme(--color-accent-500) theme(--color-bg-primary-900);
+  }
+}
+
+/* Remove Chrome's autocompletion styling */
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #121212 inset;
+  -webkit-text-fill-color: #eaeaea;
+  transition: background-color 5000s ease-in-out 0s;
 }

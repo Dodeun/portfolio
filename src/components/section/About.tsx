@@ -6,8 +6,8 @@ import frontDesktopIllustration from "../../assets/illustrations/working-desktop
 function About() {
   return (
     <div className="relative flex-1 gap-8">
-      <div className="relative z-10 mt-4 mb-12 flex max-w-[840px] flex-col gap-8">
-        <h1 className="font-heading mb-4 text-[1.75rem]">
+      <div className="relative z-10 mt-2 mb-12 flex max-w-[840px] flex-col gap-7">
+        <h1 className="font-heading mb-2 text-[1.75rem]">
           Looking for a <span className="text-accent-400">Web Development Internship</span> (Dec 2025 – Mar 2026)
         </h1>
         <p>
