@@ -1,5 +1,5 @@
 interface ButtonProps {
-  variant: "primary" | "secondary" | "nav";
+  variant: "primary" | "secondary" | "nav" | "tertiary";
   onClick?: () => void;
   children: React.ReactNode;
   isActive?: boolean;
@@ -31,6 +31,9 @@ function Button({ variant, onClick, children, isActive, type, className }: Butto
           "bg-bg-primary-900 text-text-primary-0 hover:text-accent-500 px-2 py-3 w-full shadow-md hover:cursor-pointer rounded-lg";
       }
       break;
+    case "tertiary":
+      classes =
+        "bg-bg-primary-900 text-text-primary-0 hover:text-accent-500 px-2 py-1.5 w-full shadow-sm hover:cursor-pointer rounded-lg hover:shadow-md";
   }
   return (
     <button
