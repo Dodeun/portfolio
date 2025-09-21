@@ -2,8 +2,33 @@
 import type { Project } from "../../types/project.type";
 import React, { Suspense } from "react";
 import Button from "../ui/Button";
-import GithubIcon from "../icons/tech-icons/GithubIcon";
 import DemoIcon from "../icons/base-icons/DemoIcon";
+import CssIcon from "../icons/tech-icons/CssIcon";
+import CypressIcon from "../icons/tech-icons/CypressIcon";
+import DockerIcon from "../icons/tech-icons/DockerIcon";
+import ExpressIcon from "../icons/tech-icons/ExpressIcon";
+import GithubIcon from "../icons/tech-icons/GithubIcon";
+import HtmlIcon from "../icons/tech-icons/HtmlIcon";
+import JavaScriptIcon from "../icons/tech-icons/JavaScriptIcon";
+import JestIcon from "../icons/tech-icons/JestIcon";
+import MySQLIcon from "../icons/tech-icons/MySQLIcon";
+import NestJSIcon from "../icons/tech-icons/NestJSIcon";
+import ReactIcon from "../icons/tech-icons/ReactIcon";
+import TypeScriptIcon from "../icons/tech-icons/TypeScriptIcon";
+
+const techIcons: Record<string, React.FC<{ className?: string }>> = {
+  HTML: HtmlIcon,
+  CSS: CssIcon,
+  JavaScript: JavaScriptIcon,
+  React: ReactIcon,
+  TypeScript: TypeScriptIcon,
+  Express: ExpressIcon,
+  MySQL: MySQLIcon,
+  Docker: DockerIcon,
+  NestJS: NestJSIcon,
+  Jest: JestIcon,
+  Cypress: CypressIcon,
+};
 
 interface ProjectCardProps {
   project: Project;
@@ -32,7 +57,7 @@ function ProjectCard({ project }: ProjectCardProps) {
           <p className="mb-2">{description}</p>
           <ul className="flex gap-3">
             {stack.map((tech) => {
-              const Icon = React.lazy(() => import(`../icons/tech-icons/${tech}Icon`));
+              const Icon = techIcons[tech];
 
               return (
                 <Suspense key={tech} fallback={<div className="h-6 w-6" />}>
