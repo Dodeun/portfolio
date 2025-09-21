@@ -1,6 +1,7 @@
 // Used to contact the portfolio's owner
 
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import LinkedInIcon from "../icons/base-icons/LinkedIn";
 import GithubIcon from "../icons/tech-icons/GithubIcon";
 import Button from "../ui/Button";
@@ -10,10 +11,27 @@ function Sidebar() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const form = useRef<HTMLFormElement>(null);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log({ name, email, message });
+
+    if (name === "" || email === "" || message === "") {
+      alert("Please fill all fields");
+    } else {
+      emailjs.sendForm("service_cbsdry7", "template_g47jlyw", form.current!, "oq5jZ1Rr0RIHH4oqW").then(
+        () => {
+          alert("Message sent!");
+          setName("");
+          setEmail("");
+          setMessage("");
+        },
+        (error) => {
+          console.error("FAILED...", error.text);
+          alert("Something went wrong, please try again later.");
+        },
+      );
+    }
   };
 
   const handleOpenLink = (url: string) => {
@@ -43,7 +61,7 @@ function Sidebar() {
             </Button>
           </li>
         </ul>
-        <form onSubmit={handleSubmit} className="flex w-full flex-col gap-3">
+        <form ref={form} onSubmit={handleSubmit} className="flex w-full flex-col gap-3">
           <Input fieldType="text" fieldName="name" label="Name" input={name} setInput={setName} />
           <Input fieldType="email" fieldName="email" label="Email" input={email} setInput={setEmail} />
           <Input fieldType="textarea" fieldName="message" label="Message" input={message} setInput={setMessage} />
