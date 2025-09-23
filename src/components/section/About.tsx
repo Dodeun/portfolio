@@ -28,7 +28,7 @@ function About() {
           <span className="text-accent-400">motivated</span>, I am eager to apply my knowledge in a professional
           environment, learn from experienced developers, and actively contribute to real-world projects.
         </p>
-        <a href="/portfolio/CV-Jordan-Burdon.pdf" download>
+        <a href="/portfolio/CV-Jordan-Burdon.pdf" download className="w-fit" aria-label="Download CV (PDF)">
           <Button variant="primary">Download CV</Button>
         </a>
       </div>

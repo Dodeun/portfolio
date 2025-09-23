@@ -1,4 +1,4 @@
-import type { Dispatch, SetStateAction } from "react";
+import { useId, type Dispatch, type SetStateAction } from "react";
 
 interface InputProps {
   label: string;
@@ -9,14 +9,17 @@ interface InputProps {
 }
 
 function Input({ label, fieldName, fieldType, input, setInput }: InputProps) {
+  const reactId = useId();
+  const id = `${fieldName}-${reactId}`;
+
   return (
     <div className="flex flex-col gap-1">
-      <label htmlFor={fieldName} className="pl-1">
+      <label htmlFor={id} className="pl-1">
         {label}
       </label>
       {fieldType === "textarea" ? (
         <textarea
-          id={fieldName}
+          id={id}
           name={fieldName}
           value={input}
           onChange={(e) => setInput(e.target.value)}
@@ -25,7 +28,7 @@ function Input({ label, fieldName, fieldType, input, setInput }: InputProps) {
         />
       ) : (
         <input
-          id={fieldName}
+          id={id}
           name={fieldName}
           type={fieldType}
           value={input}
