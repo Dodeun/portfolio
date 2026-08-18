@@ -6,6 +6,7 @@ import ProjectCard from "../cards/ProjectCard";
 function Projects() {
   return (
     <div className="grid auto-rows-min grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-5">
+      <h1 className="sr-only">My projects</h1>
       {projects.map((project: Project) => (
         <ProjectCard key={project.title} project={project} />
       ))}

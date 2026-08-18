@@ -12,6 +12,7 @@ function Skills() {
   }
   return (
     <div className="relative flex-1">
+      <h1 className="sr-only">My technical skilss</h1>
       <ul className="flex flex-col gap-[5vh]">
         <li>
           <h2 className="mb-2 text-2xl">Frontend</h2>

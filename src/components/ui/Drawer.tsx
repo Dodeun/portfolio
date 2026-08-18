@@ -11,9 +11,9 @@ function Drawer({ children }: DrawerProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="medium:hidden scrollbar">
+    <div className="medium:hidden">
       <div className="fixed right-3.5 bottom-4 z-50">
-        <Button variant="secondary" onClick={() => setIsOpen(!isOpen)}>
+        <Button variant="secondary" onClick={() => setIsOpen(!isOpen)} ariaLabel="Open contact sidebar">
           <ArrowIcon className="w-8" />
         </Button>
       </div>
@@ -24,11 +24,11 @@ function Drawer({ children }: DrawerProps) {
         }`}
       >
         <div className="fixed right-2 bottom-2">
-          <Button variant="secondary" onClick={() => setIsOpen(!isOpen)}>
+          <Button variant="secondary" onClick={() => setIsOpen(!isOpen)} ariaLabel="Close contact sidebar">
             <ArrowIcon className="bottom-0 w-8 rotate-180" />
           </Button>
         </div>
-        <div className="h-full overflow-y-auto p-4">{children}</div>
+        <div className="scrollbar h-full overflow-y-auto p-4">{children}</div>
       </div>
     </div>
   );

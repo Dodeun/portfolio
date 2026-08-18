@@ -10,6 +10,7 @@ import Drawer from "./components/ui/Drawer";
 import Section from "./components/layout/Section";
 
 function App() {
+  
   const [activeTab, setActiveTab] = useState<TabType>("about");
 
   return (

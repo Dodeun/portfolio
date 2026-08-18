@@ -5,9 +5,10 @@ interface ButtonProps {
   isActive?: boolean;
   type?: "submit";
   className?: string;
+  ariaLabel?: string;
 }
 
-function Button({ variant, onClick, children, isActive, type, className }: ButtonProps) {
+function Button({ variant, onClick, children, isActive, type, className, ariaLabel }: ButtonProps) {
   const baseClasses = `${className} font-heading text-center transition-colors font-semibold`;
 
   let classes = "";
@@ -41,6 +42,7 @@ function Button({ variant, onClick, children, isActive, type, className }: Butto
       className={`${baseClasses} ${classes}`}
       onClick={disabled ? undefined : onClick}
       disabled={disabled}
+      aria-label={ariaLabel}
     >
       {children}
     </button>

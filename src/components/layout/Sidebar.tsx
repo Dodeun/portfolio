@@ -51,7 +51,11 @@ function Sidebar() {
         </div>
         <ul className="flex gap-4">
           <li>
-            <Button variant="secondary" onClick={() => handleOpenLink("https://github.com/Dodeun")}>
+            <Button
+              variant="secondary"
+              onClick={() => handleOpenLink("https://github.com/Dodeun")}
+              ariaLabel="Open github page"
+            >
               <GithubIcon className="w-6" />
             </Button>
           </li>
@@ -59,6 +63,7 @@ function Sidebar() {
             <Button
               variant="secondary"
               onClick={() => handleOpenLink("https://www.linkedin.com/in/jordan-burdon-5681a6b8/")}
+              ariaLabel="Open linkedin page"
             >
               <LinkedInIcon className="w-6" />
             </Button>
